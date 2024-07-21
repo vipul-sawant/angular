@@ -1,0 +1,21 @@
+ <h2 class="title">Book List</h2> 
+<!-- <ul> -->
+ <!-- book =  {{books}} -->
+  <!-- <li> -->
+    <div class="container">
+      <div class="bookContainer" *ngFor="let book of books">
+        <p class="book_info"> {{ book.id }}. </p>
+        <p class="book_info"> {{ book.title }} </p>
+        <p class="book_info"> by {{ book.author }} </p>
+        <button (click)="selectBook(book)">Edit</button>
+        <button (click)="deleteBook(book)">Delete</button>
+      </div>
+      <!-- <app-form (save)="onBookUpdate()" [book]="selectedBook" (save)="ngOnInit()"></app-form> -->
+      <a [routerLink]='["/entry"]'>Create</a>
+
+    </div>
+    
+  
+  <!-- </li> -->
+<!-- </ul> -->
+

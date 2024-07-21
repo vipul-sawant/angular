@@ -1,0 +1,24 @@
+.title{
+  text-align: center;
+}
+.container{
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 12px 0px;
+  justify-content: space-evenly;
+}
+
+.book_info{
+  margin: 0;
+  padding: 5px 2.5px;
+}

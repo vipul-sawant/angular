@@ -1,0 +1,17 @@
+<!-- <div *ngIf="book"> -->
+  <h2>{{ book?.id === undefined ? 'Add' : 'Edit' }} Book</h2>
+  <!-- <h2>{{ book.id > 0 ? 'Edit' : 'Add' }} Book</h2> -->
+  <form (ngSubmit)="onSubmit($event)">
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="book.title" name="title" required />
+
+    <label for="author">Author:</label>
+    <input id="author" [(ngModel)]="book.author" name="author" required />
+
+    <button type="submit">{{ book?.id === undefined ? 'Add' : 'Update' }} Book</button>
+    <!-- <button type="submit">{{ book.id > 0 ? 'Update' : 'Add' }} Book</button> -->
+    <button type="button" (click)="clearForm()">Cancel</button>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active"> Book List </a>
+  </form>
+<!-- </div> -->
+
